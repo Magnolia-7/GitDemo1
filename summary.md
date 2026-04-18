@@ -41,5 +41,9 @@ git merge ，然后直接push到github仓库。
 git branch -d <分支名字>
 这样就变得干净了
 好了，接下来我要说的是真正安全的操作
-同样进行
-git push -u origin <新分支名字>（给远程仓库创建分支建立联系，这样我们在团队协作
+同样进行pull操作（和git reset --hard origin/main不同，该操作强制将远程下载覆盖本地）
+创建新分支
+git checkout -b dev1
+git push -u origin <新分支名字>（给远程仓库创建分支建立联系，这样我们在团队协作才能进行pr操作）
+接着开始写新功能,新东西
+接着保存
