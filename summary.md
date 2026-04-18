@@ -47,3 +47,8 @@ git checkout -b dev1
 git push -u origin <新分支名字>（给远程仓库创建分支建立联系，这样我们在团队协作才能进行pr操作）
 接着开始写新功能,新东西
 接着保存
+然后我们进行在分支进行pull操作，然后就会触发PR，接着在github上审核和合并
+最后我们再切回到本地仓库和主分支
+然后我们就可以在远程和本地删除该分支了
+本地删除：git branch -d <分支名字>
+远程删除：git push origin --delete <你的分支名> or 直接在github上删除
