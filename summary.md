@@ -15,10 +15,22 @@
 
 二：
 本地操作
-1.修改后将文件添加到暂存区 ： git add <文件名> or git add .(添加全部修改到暂存区)
+1.修改后将文件添加到暂存区 ： git add <文件名> or git add .(添加全部修改到暂存区)git status
 2.如果此时想撤回此操作： git reset HEAD 
 3.如果确认提交： git commit -m '备注'
 4.如果提交后想撤回:
 (1) :撤回至暂存区： git reset --soft HEAD~1(推荐)
 (2) :直接撤回： git reset --hard HEAD~1
 5.工作区某文件返回上一次保存状态: git checkout 文件名
+
+远程操作：
+1.push到远程仓库的操作：git push <远程仓库在本地操作的名字> <分支名字>
+
+分支：
+1.给当前选中分支拿到最新仓库状态: git pull
+2.每一个分支我们可以给他写一个分操作:
+git branch <新分支名字> （此操作是基于当前选中分支进行的复制操作）
+3.展示当前拥有的分支：git branch 
+4.切换分支：git checkout <分支名字>
+5.在新分支进行修改，就像这样
+
